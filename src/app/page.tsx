@@ -57,15 +57,21 @@ function HeroSlider() {
   return (
     <div className="flex justify-center relative">
       <Image src={Hero1} alt="hero" className="object-cover brightness-50 w-screen h-screen" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen">
-        <div className="flex justify-between mx-auto text-white" style={{ width: "95%" }}>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="flex justify-between mx-auto text-white" style={{ width: "90vw" }}>
           <ArrowLeft />
-          <p className="lg:text-3xl text-lg text-white font-light">GETTING STARTED WITH JAVASCRIPT</p>
+          <div>
+            <p className="lg:text-3xl text-sm sm:text-lg text-white font-light">GETTING STARTED WITH JAVASCRIPT</p>
+            <div className="flex gap-16 pt-3 justify-center">
+              <a className="px-3 py-2 rounded-md bg-ekc-b3 hover:bg-ekc-b4 duration-300 cursor-pointer uppercase font-semibold text-lg">Start</a>
+              <a className="px-3 py-2 rounded-md bg-ekc-b3 hover:bg-ekc-b4 duration-300 cursor-pointer uppercase font-semibold text-lg">Lessons</a>
+            </div>
+          </div>
           <ArrowRight />
         </div>
       </div>
       <span className="absolute bottom-2 flex gap-x-3">
-        <div className="p-3 bg-green-600 rounded-full"></div>
+        <div className="p-3 bg-green-300 rounded-full"></div>
         <div className="p-3 bg-green-500 rounded-full"></div>
         <div className="p-3 bg-green-500 rounded-full"></div>
       </span>
