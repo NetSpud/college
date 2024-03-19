@@ -63,7 +63,6 @@ function HeroSlider() {
   const images = [Hero1, Hero2, Hero3];
   const delay = 3000;
   const [currentImage, setCurrentImage] = useState(Hero1);
-  const [heroPosition, setHeroPosition] = useState(0);
 
   function nextImage(opposite = false) {
     // if opposite is true, go to the previous image
