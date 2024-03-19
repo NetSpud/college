@@ -5,11 +5,12 @@ import Image, { StaticImageData } from "next/image";
 import Hero1 from "../../public/hero-1.jpg";
 import Hero2 from "../../public/hero-2.jpg";
 import Hero3 from "../../public/hero-3.jpg";
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { Dispatch, MouseEventHandler, SetStateAction, useEffect, useState } from "react";
 
-function ArrowLeft() {
+function ArrowLeft({ onClick }: { onClick: MouseEventHandler }) {
   return (
     <svg
+      onClick={onClick}
       className="w-8 h-8 cursor-pointer hover:text-ekc-b3 duration-300"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -27,9 +28,10 @@ function ArrowLeft() {
   );
 }
 
-function ArrowRight() {
+function ArrowRight({ onClick }: { onClick: MouseEventHandler }) {
   return (
     <svg
+      onClick={onClick}
       className="w-8 h-8 cursor-pointer hover:text-ekc-b3 duration-300"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -63,12 +65,25 @@ function HeroSlider() {
   const [currentImage, setCurrentImage] = useState(Hero1);
   const [heroPosition, setHeroPosition] = useState(0);
 
+  function nextImage(opposite = false) {
+    // if opposite is true, go to the previous image
+    const currentIndex = images.indexOf(currentImage);
+    let nextIndex;
+    if (opposite) {
+      nextIndex = currentIndex - 1;
+      if (nextIndex < 0) {
+        nextIndex = images.length - 1;
+      }
+    } else {
+      nextIndex = (currentIndex + 1) % images.length;
+    }
+    return setCurrentImage(images[nextIndex]);
+  }
+
   useEffect(() => {
     // loop through the images in order, then go from start again, delay of 3000
     const interval = setInterval(() => {
-      const currentIndex = images.indexOf(currentImage);
-      const nextIndex = (currentIndex + 1) % images.length;
-      setCurrentImage(images[nextIndex]);
+      nextImage();
     }, delay);
     return () => clearInterval(interval);
   }),
@@ -82,7 +97,7 @@ function HeroSlider() {
 
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <div className="flex justify-between mx-auto text-white" style={{ width: "90vw" }}>
-          <ArrowLeft />
+          <ArrowLeft onClick={() => nextImage(true)} />
           <div>
             <p className="lg:text-3xl text-sm sm:text-lg text-white font-light">GETTING STARTED WITH JAVASCRIPT</p>
             <div className="flex gap-16 pt-3 justify-center">
@@ -90,7 +105,7 @@ function HeroSlider() {
               <a className="px-3 py-2 rounded-md bg-ekc-b3 hover:bg-ekc-b4 duration-300 cursor-pointer uppercase font-semibold text-lg">Lessons</a>
             </div>
           </div>
-          <ArrowRight />
+          <ArrowRight onClick={() => nextImage()} />
         </div>
       </div>
       <span className="absolute bottom-2 flex gap-x-3">
