@@ -74,7 +74,7 @@ const NavItem = ({ display, slug }: { display: string; slug: string }) => {
 };
 
 function SearchBox() {
-  return <input type="text" placeholder="Search..." className="mt-3 h-min ml-auto lg:w-auto lg:mx-0 mx-auto w-2/3 placeholder:text-white text-white bg-ekc-b4 pl-3 py-3 rounded-md focus:outline-none" />;
+  return <input type="text" placeholder="Search..." className="lg:mt-0 mt-3 h-min ml-auto lg:w-auto lg:mx-0 mx-auto w-2/3 placeholder:text-white text-white bg-ekc-b4 pl-3 py-3 rounded-md focus:outline-none" />;
 }
 
 export default Navigation;
