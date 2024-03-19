@@ -38,8 +38,8 @@ const MobileNav = () => {
     <div className="sm:hidden">
       <div className="flex">
         <Logo />
-        <button onClick={() => setIsOpen(!isOpen)} className="p-3 ml-auto rounded-md bg-gray-500 hover:bg-gray-400 duration-300">
-          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <button onClick={() => setIsOpen(!isOpen)} className="px-3 py-2 ml-auto rounded-md bg-gray-500 hover:bg-gray-400 duration-300">
+          <svg className="w-8 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
           </svg>
         </button>

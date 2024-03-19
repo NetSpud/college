@@ -1,7 +1,11 @@
+"use client";
 import Footer from "@/app/components/footer";
 import Navigation from "@/app/components/navigation";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Hero1 from "../../public/hero-1.jpg";
+import Hero2 from "../../public/hero-2.jpg";
+import Hero3 from "../../public/hero-3.jpg";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 function ArrowLeft() {
   return (
@@ -54,9 +58,28 @@ export default function Home() {
 }
 
 function HeroSlider() {
+  const images = [Hero1, Hero2, Hero3];
+  const delay = 3000;
+  const [currentImage, setCurrentImage] = useState(Hero1);
+  const [heroPosition, setHeroPosition] = useState(0);
+
+  useEffect(() => {
+    // loop through the images in order, then go from start again, delay of 3000
+    const interval = setInterval(() => {
+      const currentIndex = images.indexOf(currentImage);
+      const nextIndex = (currentIndex + 1) % images.length;
+      setCurrentImage(images[nextIndex]);
+    }, delay);
+    return () => clearInterval(interval);
+  }),
+    [currentImage];
+
   return (
     <div className="flex justify-center relative">
-      <Image src={Hero1} alt="hero" className="object-cover brightness-50 w-screen h-screen" />
+      <div className="flex-shrink-0 w-full opacity-100 duration-100">
+        <Image src={currentImage} alt="hero" className="object-cover brightness-50 w-screen h-screen" />
+      </div>
+
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <div className="flex justify-between mx-auto text-white" style={{ width: "90vw" }}>
           <ArrowLeft />
@@ -71,9 +94,9 @@ function HeroSlider() {
         </div>
       </div>
       <span className="absolute bottom-2 flex gap-x-3">
-        <div className="p-3 bg-green-300 rounded-full"></div>
-        <div className="p-3 bg-green-500 rounded-full"></div>
-        <div className="p-3 bg-green-500 rounded-full"></div>
+        {images.map((image, index) => (
+          <div key={index} onClick={() => setCurrentImage(image)} className={`p-3 bg-green-300 rounded-full cursor-pointer ${image === currentImage ? "bg-green-500" : ""}`}></div>
+        ))}
       </span>
     </div>
   );
