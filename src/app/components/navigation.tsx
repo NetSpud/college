@@ -9,11 +9,11 @@ const urls = [
   },
   {
     display: "Lessons",
-    url: "/news",
+    url: "/lessons",
   },
   {
     display: "Contact",
-    url: "/events",
+    url: "/contact",
   },
 ];
 
