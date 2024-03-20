@@ -5,7 +5,7 @@ import Image, { StaticImageData } from "next/image";
 import Hero1 from "../../public/hero-1.jpg";
 import Hero2 from "../../public/hero-2.jpg";
 import Hero3 from "../../public/hero-3.jpg";
-import { Dispatch, MouseEventHandler, SetStateAction, useEffect, useState } from "react";
+import { MouseEventHandler, useEffect, useState } from "react";
 
 function ArrowLeft({ onClick }: { onClick: MouseEventHandler }) {
   return (
@@ -18,9 +18,9 @@ function ArrowLeft({ onClick }: { onClick: MouseEventHandler }) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
       <line x1="19" y1="12" x2="5" y2="12"></line>
       <polyline points="12 19 5 12 12 5"></polyline>
@@ -39,9 +39,9 @@ function ArrowRight({ onClick }: { onClick: MouseEventHandler }) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
       <line x1="5" y1="12" x2="19" y2="12"></line>
       <polyline points="12 5 19 12 12 19"></polyline>
@@ -51,11 +51,9 @@ function ArrowRight({ onClick }: { onClick: MouseEventHandler }) {
 
 export default function Home() {
   return (
-    <div>
-      <Navigation />
+    <>
       <HeroSlider />
-      <Footer />
-    </div>
+    </>
   );
 }
 
