@@ -3,7 +3,7 @@ function Page() {
   return (
     <>
       <Hero />
-      <div className="grid grid-flow-row lg:grid-rows-2 lg:grid-cols-4 sm:grid-cols-2 sm:grid-rows-4 grid-cols-1 grid-rows-8 gap-3 mt-3 mx-3">
+      <div className="grid grid-flow-row lg:grid-rows-2 lg:grid-cols-4 sm:grid-cols-2 sm:grid-rows-4 grid-cols-1 grid-rows-8 gap-3 mt-3 mx-3 my-12">
         <Lesson number={1} name="History Of Javascript" desc="This is the first lesson" />
         <Lesson number={2} name="Hello, world!" desc="This is the first lesson" />
         <Lesson number={3} name="Variables" desc="This is the first lesson" />
@@ -27,7 +27,7 @@ function Hero() {
 
 function Lesson({ number, name, desc }: { number: number; name: string; desc: string }) {
   return (
-    <Link href={`/lesson-${number}`} className="bg-gray-600 hover:bg-gray-800 duration-300 cursor-pointer text-white rounded-md w-full mx-auto p-3">
+    <Link href={`/lessons/${number}`} className="bg-gray-600 hover:bg-gray-800 duration-300 cursor-pointer text-white rounded-md w-full mx-auto p-3">
       <h1 className="font-semibold">
         {number}. {name}
       </h1>
