@@ -1,11 +1,11 @@
 "use client";
 import Footer from "@/app/components/footer";
 import Navigation from "@/app/components/navigation";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Hero1 from "../../public/hero-1.jpg";
 import Hero2 from "../../public/hero-2.jpg";
 import Hero3 from "../../public/hero-3.jpg";
-import { Dispatch, MouseEventHandler, SetStateAction, useEffect, useState } from "react";
+import { MouseEventHandler, useEffect, useState } from "react";
 
 function ArrowLeft({ onClick }: { onClick: MouseEventHandler }) {
   return (
