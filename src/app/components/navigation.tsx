@@ -1,5 +1,6 @@
 "use client";
 import Logo from "@/app/components/logo";
+import Link from "next/link";
 import { useState } from "react";
 
 const urls = [
@@ -67,9 +68,9 @@ const Navigation = () => {
 
 const NavItem = ({ display, slug }: { display: string; slug: string }) => {
   return (
-    <a className="text-xl uppercase py-2 font-extrabold text-black rounded-md hover:text-ekc-b4 duration-300" href={slug}>
+    <Link className="text-xl uppercase py-2 font-extrabold text-black rounded-md hover:text-ekc-b4 duration-300" href={slug}>
       {display}
-    </a>
+    </Link>
   );
 };
 

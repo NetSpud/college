@@ -6,7 +6,7 @@ import Hero1 from "../../public/hero-1.jpg";
 import Hero2 from "../../public/hero-2.jpg";
 import Hero3 from "../../public/hero-3.jpg";
 import { MouseEventHandler, useEffect, useState } from "react";
-
+import Link from "next/link";
 function ArrowLeft({ onClick }: { onClick: MouseEventHandler }) {
   return (
     <svg
@@ -99,7 +99,9 @@ function HeroSlider() {
             <p className="lg:text-3xl text-sm sm:text-lg text-white font-light">GETTING STARTED WITH JAVASCRIPT</p>
             <div className="flex gap-16 pt-3 justify-center">
               <a className="px-3 py-2 rounded-md bg-ekc-b3 hover:bg-ekc-b4 duration-300 cursor-pointer uppercase font-semibold text-lg">Start</a>
-              <a className="px-3 py-2 rounded-md bg-ekc-b3 hover:bg-ekc-b4 duration-300 cursor-pointer uppercase font-semibold text-lg">Lessons</a>
+              <Link href="/lessons" className="px-3 py-2 rounded-md bg-ekc-b3 hover:bg-ekc-b4 duration-300 cursor-pointer uppercase font-semibold text-lg">
+                Lessons
+              </Link>
             </div>
           </div>
           <ArrowRight onClick={() => nextImage()} />

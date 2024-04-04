@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ReactNode } from "react";
 
 function Footer() {
@@ -24,11 +25,11 @@ function Footer() {
     </div>
   );
 }
-function SocialIcon({ children, href }: { children: ReactNode; href?: string }) {
+function SocialIcon({ children, href = "" }: { children: ReactNode; href?: string }) {
   return (
-    <a href={href} target="_blank" className="bg-gray-900 fill-white rounded-lg p-3 cursor-pointer hover:bg-gray-600 duration-300">
+    <Link href={href} target="_blank" className="bg-gray-900 fill-white rounded-lg p-3 cursor-pointer hover:bg-gray-600 duration-300">
       {children}
-    </a>
+    </Link>
   );
 }
 
