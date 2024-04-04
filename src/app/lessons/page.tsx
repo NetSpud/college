@@ -26,7 +26,7 @@ function Hero() {
 
 function Lesson({ number, name, desc }: { number: number; name: string; desc: string }) {
   return (
-    <a href={`/lesson${number}`} className="bg-gray-600 hover:bg-gray-800 duration-300 cursor-pointer text-white rounded-md w-full mx-auto p-3">
+    <a href={`/lesson-${number}`} className="bg-gray-600 hover:bg-gray-800 duration-300 cursor-pointer text-white rounded-md w-full mx-auto p-3">
       <h1 className="font-semibold">
         {number}. {name}
       </h1>
