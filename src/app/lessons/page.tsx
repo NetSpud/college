@@ -3,7 +3,13 @@ function Page() {
   return (
     <>
       <Hero />
-      <div className="grid grid-flow-row lg:grid-rows-2 lg:grid-cols-4 sm:grid-cols-2 sm:grid-rows-4 grid-cols-1 grid-rows-8 gap-3 mt-3 mx-3 my-12">
+
+      <div className="text-center my-24">
+        <p className="text-lg">
+          Welcome to the lessons page! Here you can find all the lessons that are available to you. You can click on a lesson to start it. <br /> Once completed, you can progress onto the next lesson.
+        </p>
+      </div>
+      <div className="container mx-auto grid grid-flow-row lg:grid-rows-2 lg:grid-cols-4 sm:grid-cols-2 sm:grid-rows-4 grid-cols-1 grid-rows-8 gap-3 mt-12 mb-52">
         <Lesson number={1} name="History Of Javascript" desc="This is the first lesson" />
         <Lesson number={2} name="Hello, world!" desc="This is the first lesson" />
         <Lesson number={3} name="Variables" desc="This is the first lesson" />
