@@ -182,11 +182,10 @@ function Lesson2() {
   );
 }
 function Lesson3() {
+  const [answer, setAnswer] = useState(false);
   useEffect(() => {
     Prism.highlightAll();
-  }, []);
-
-  const [answer, setAnswer] = useState(false);
+  }, [answer]);
 
   return (
     <div className="flex w-full">
