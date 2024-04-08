@@ -11,14 +11,14 @@ function Page() {
         </p>
       </div>
       <div className="container mx-auto grid grid-flow-row lg:grid-rows-2 lg:grid-cols-4 sm:grid-cols-2 sm:grid-rows-4 grid-cols-1 grid-rows-8 gap-3 mt-12 mb-52">
-        <Lesson number={1} name="History Of Javascript" desc="This is the first lesson" />
-        <Lesson number={2} name="Hello, world!" desc="This is the first lesson" />
-        <Lesson number={3} name="Variables" desc="This is the first lesson" />
-        <Lesson number={4} name="Data Types" desc="This is the first lesson" />
-        <Lesson number={5} name="Mathmatical Operations" desc="This is the first lesson" />
-        <Lesson number={6} name="Conditional Operators" desc="This is the first lesson" />
-        <Lesson number={7} name="Loops" desc="This is the first lesson" />
-        <Lesson number={8} name="Functions" desc="This is the first lesson" />
+        <Lesson number={1} name="History Of Javascript" desc="How long has it been around?" />
+        <Lesson number={2} name="Hello, world!" desc="How long has it been around?" />
+        <Lesson number={3} name="Variables" desc="What are variables? Why are they helpful?" />
+        <Lesson number={4} name="Data Types" desc="What's the difference between the number 1, and a string “1”?" />
+        <Lesson number={5} name="Mathmatical Operations" desc="Addition, subtraction, multiplication, division and modulo " />
+        <Lesson number={6} name="Conditional Operators" desc="IF, ELSE, NOT" />
+        <Lesson number={7} name="Loops" desc="What happens when you need to run a piece of code 10,000 times?" />
+        <Lesson number={8} name="Functions" desc="How do you re-use code?" />
       </div>
       <div className="text-center py-12">
         <ContactBtn />
