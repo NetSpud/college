@@ -2,7 +2,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-// import "prismjs/themes/prism-tomorrow.css";
 import Prism from "prismjs";
 import { useEffect, useState } from "react";
 
@@ -360,17 +359,489 @@ function Lesson4() {
 }
 
 function Lesson5() {
-  return <h1>Lesson 5</h1>;
+  const [showAnswer, setShowAnswer] = useState(false);
+
+  useEffect(() => {
+    Prism.highlightAll();
+  }, [showAnswer]);
+  const title = "Lesson 5 - Mathmatical Operators";
+  return (
+    <div className="flex w-full">
+      <div className="bg-gray-300 w-72 hidden lg:block">
+        <div className="flex flex-col gap-3 px-4">
+          <span className="text-sm text-gray-500">Chapter</span>
+          <span className="text-sm">{title}</span>
+          <span className="text-sm text-gray-500">Lesson Navigation</span>
+          <Link href="#add" className="text-sm">
+            Addition
+          </Link>
+          <Link href="#sub" className="text-sm">
+            Subtraction
+          </Link>
+          <Link href="#div" className="text-sm">
+            Division
+          </Link>
+          <Link href="#mult" className="text-sm">
+            Multiplication
+          </Link>
+          <Link href="#mod" className="text-sm">
+            Modulo
+          </Link>
+        </div>
+      </div>
+      <div className="bg-ekc-b2 w-full p-6">
+        <div className="lg:w-3/4 mx-auto text-white">
+          <Heading>{title}</Heading>
+          <p className="text-center">In this lesson, we&apos;re going to learn how to perform mathmatical calculations in JavaScript.</p>
+          <p>There are several mathmatical operators that are available for us to use:</p>
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">{`+ // addition\n- // subtraction\n/ // division\n* // multiplication\n% // modulo`}</code>
+          </pre>
+          <SubHeading id="add">Addition</SubHeading>
+
+          <p>Here is an example of the addition operator:</p>
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">{`const num1 = 12
+const num2 = 5;
+
+const sum = num1 + num2;
+console.log(sum); // 17`}</code>
+          </pre>
+          <SubHeading id="sub">Subtraction</SubHeading>
+          <p>Here is an example of using the subtraction operator:</p>
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">{`const num1 = 12
+const num2 = 5;
+
+const sum = num1 - num2;
+console.log(sum); // 7`}</code>
+          </pre>
+          <SubHeading id="div">Division</SubHeading>
+          <p>Here is an example of using the division operator:</p>
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">{`const num1 = 100
+const num2 = 5;
+
+const sum = num1 / num2;
+console.log(sum); // 20`}</code>
+          </pre>
+          <SubHeading id="mult">Multiplication</SubHeading>
+          <p>Here is an example of using the multiplication operator:</p>
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">{`const num1 = 100
+const num2 = 5;
+
+const sum = num1 * num2;
+console.log(sum); // 500`}</code>
+          </pre>
+          <SubHeading id="mod">Modulo</SubHeading>
+          <p>The modulo operator is slightly different, and works by returning the remainder from a calculation.</p>
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">{`const num1 = 10;
+const num2 = 3;
+const result = a % b;
+console.log(c); // 1`}</code>
+          </pre>
+
+          <SubSubHeading>Exercise</SubSubHeading>
+          <p>Write a piece of code that calculates the sum of 100 and 50, and logs the result to the console. If you get stuck, click the button to reveal the answer.</p>
+
+          <button onClick={() => setShowAnswer(!showAnswer)} className="px-3 py-2 rounded-md text-white font-semibold bg-ekc-b1 hover:bg-ekc-b3 duration-300">
+            See Answer
+          </button>
+
+          {showAnswer && (
+            <div>
+              <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+                <code className="language-js">{`const num1 = 100;
+const num2 = 50;
+const sum = num1 + num2;
+console.log(sum); // 150`}</code>
+              </pre>
+            </div>
+          )}
+
+          <div className="flex gap-x-3 justify-between pt-3">
+            <Link href="/lessons/4" className="px-3 py-2 rounded-md text-white font-semibold bg-ekc-b1 hover:bg-ekc-b3 duration-300">
+              Return to lesson 4
+            </Link>
+            <Link href="/lessons/6" className="px-3 py-2 rounded-md text-white font-semibold bg-ekc-b1 hover:bg-ekc-b3 duration-300">
+              Next Lesson
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 function Lesson6() {
-  return <h1>Lesson 6</h1>;
+  const [showAnswer, setShowAnswer] = useState(false);
+
+  useEffect(() => {
+    Prism.highlightAll();
+  }, [showAnswer]);
+  const title = "Lesson 6 - Conditional Operators";
+  return (
+    <div className="flex w-full">
+      <div className="bg-gray-300 w-72 hidden lg:block">
+        <div className="flex flex-col gap-3 px-4">
+          <span className="text-sm text-gray-500">Chapter</span>
+          <span className="text-sm">{title}</span>
+          <span className="text-sm text-gray-500">Lesson Navigation</span>
+          <Link href="#if" className="text-sm">
+            The &quot;if&quot; statement
+          </Link>
+          <Link href="#else" className="text-sm">
+            Else
+          </Link>
+          <Link href="#logical" className="text-sm">
+            Logical Operators
+          </Link>
+          <Link href="#exercise" className="text-sm">
+            Exercise
+          </Link>
+        </div>
+      </div>
+      <div className="bg-ekc-b2 w-full p-6">
+        <div className="lg:w-3/4 mx-auto text-white">
+          <Heading>{title}</Heading>
+          <p className="text-center">In this lesson, we&apos;re going to learn how to perform conditional operations in JavaScript.</p>
+          <p>There are several conditional operators that are available for us to use:</p>
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">{`if // if statement\nelse // else statement\nelse if // else if statement`}</code>
+          </pre>
+
+          <SubHeading id="if">The &quot;if&quot; statement</SubHeading>
+          <p>The if statement is a crucial part of logic within a program, as it allows the code to progress down different paths, depending on the state of the program.</p>
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">{`if (condition) {
+  // code to run if the condition is true
+}`}</code>
+          </pre>
+          <p>
+            As demonstrated above, the code <i>within</i> the curly braces will only run if the condition is true. If the condition is false, the code will be skipped.
+          </p>
+          <SubHeading id="else">Else</SubHeading>
+          <p>The else statement is used as a supplement with the if statement, and allows us to run code if the if statement is false.</p>
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">{`if (condition) {
+  // code to run if the condition is true
+} else {
+  // code to run if the condition is false
+}`}</code>
+          </pre>
+
+          <SubHeading id="exercise">Comparisons</SubHeading>
+          <p>Javascript doesn&quot;t just check for basic true/false, it can also compare data in a more sophistocated form, such as greater than, less than, or not equal to.</p>
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">{`> //greater than
+>= //greater than or equal to
+< //less than
+<= //less than or equal to
+== //equal to
+!= //not equal to
+=== //strictly equal to
+!== //strictly not equal to`}</code>
+          </pre>
+          <p>These comparisons are used to make more advanced decisions. For example:</p>
+
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">
+              {`let accountBalance = 5000; // the current account balance
+let withdrawalAmount = 6000; // the amount the user wants to withdraw
+
+if (withdrawalAmount > accountBalance) {
+  console.log("Insufficient balance. Unable to process withdrawal.");
+} else {
+  accountBalance -= withdrawalAmount;
+  console.log("Withdrawal successful. Your new balance is \${accountBalance}.");
+}`}
+            </code>
+          </pre>
+
+          <SubHeading id="logical">Logical operators</SubHeading>
+          <p>There are also several logical operators that we can use in combination with our conditional statements to perform more complicated decisions</p>
+
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">{`&& // and\n|| // or\n! // not`}</code>
+          </pre>
+          <p>
+            These enable us to make decisions based on the value of more than one variable. <br /> For example:
+          </p>
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">{`if(email === "example@example.com" && password === "password") {
+  console.log("You are logged in");
+}`}</code>
+          </pre>
+          <p>
+            otice how the use of the &quot;&&&quot; operator means that the result of both email <strong>and</strong> password must be correct for the code to run.
+          </p>
+
+          <SubHeading id="exercise">Exercise</SubHeading>
+          <p className="mb-3">
+            A more tricky one this time! Please declare two constant variables, named email and password. These variables should be string values, and should have the values &quot;example@example.com&quot;, and &quot;password&quot;
+            <br />
+            Next, write an if statement that logs if the value of email equals &quot;example@example.com&quot; and the value of password equals &quot;password&quot;. If you get stuck, click the button to reveal the answer.
+          </p>
+
+          <button onClick={() => setShowAnswer(!showAnswer)} className="px-3 py-2 rounded-md text-white font-semibold bg-ekc-b1 hover:bg-ekc-b3 duration-300">
+            See Answer
+          </button>
+
+          {showAnswer && (
+            <div>
+              <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+                <code className="language-js">{`const email = "example@example.com";
+const password = "password";
+
+if(email === "example@example@example.com" && password === "password") {
+    console.log("Login successful");
+} else {
+    console.log("Login failed");
+}`}</code>
+              </pre>
+              <p>If you want more of a challenge, why not try messing around with the variable values? What do you need to do to make the login fail?</p>
+            </div>
+          )}
+
+          <div className="flex gap-x-3 justify-between pt-3">
+            <Link href="/lessons/5" className="px-3 py-2 rounded-md text-white font-semibold bg-ekc-b1 hover:bg-ekc-b3 duration-300">
+              Return to lesson 5
+            </Link>
+            <Link href="/lessons/7" className="px-3 py-2 rounded-md text-white font-semibold bg-ekc-b1 hover:bg-ekc-b3 duration-300">
+              Next Lesson
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 function Lesson7() {
-  return <h1>Lesson 7</h1>;
-}
+  const [showAnswer, setShowAnswer] = useState(false);
 
+  useEffect(() => {
+    Prism.highlightAll();
+  }, [showAnswer]);
+  const title = "Lesson 6 - Loops";
+  return (
+    <div className="flex w-full">
+      <div className="bg-gray-300 w-72 hidden lg:block">
+        <div className="flex flex-col gap-3 px-4">
+          <span className="text-sm text-gray-500">Chapter</span>
+          <span className="text-sm">{title}</span>
+          <span className="text-sm text-gray-500">Lesson Navigation</span>
+          <Link href="#if" className="text-sm">
+            The &quot;if&quot; statement
+          </Link>
+          <Link href="#else" className="text-sm">
+            Else
+          </Link>
+          <Link href="#logical" className="text-sm">
+            Logical Operators
+          </Link>
+          <Link href="#exercise" className="text-sm">
+            Exercise
+          </Link>
+        </div>
+      </div>
+      <div className="bg-ekc-b2 w-full p-6">
+        <div className="lg:w-3/4 mx-auto text-white">
+          <Heading>{title}</Heading>
+          <p>
+            Loops are of benefit to programmers anytime they need to run a piece of code a set number of times. If you needed to send 100, emails, you don&apos;t want to be running your code 100 times manually. This is where loops come in to help us.
+          </p>
+          <p>There are several types of loops available to us in Javascript:</p>
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">{`for // for loop\nwhile // while loop\ndo while // do while loop`}</code>
+          </pre>
+          <p>There are more loop options available, but we won&apos;t be covering those in this lesson.</p>
+          <SubHeading id="for">For</SubHeading>
+          <p>
+            The for loop is perfect for when you need to run your code a set number of times. <br />A for loop breaks down into three parts
+          </p>
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">{`for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
+// for
+// let i = 0; i < 10; i++
+// the logic`}</code>
+          </pre>
+          <p>The first part, the &quot;for&quot; starts our for loop statement, telling Javascript what it is</p>
+          <p>
+            The second part is our condition for our for loop, which has a counter variable to track how many times to run, a condition (i &lt; 10) and then an increment (i++) After this, we have the curly brackets, which holds the code that runs for
+            every instance of the loop. In the above code, it&apos;d print the numbers 0-9 to the console.
+          </p>
+          <SubHeading id="while">While</SubHeading>
+          <p>The while loop is perfect for when you don&apos;t know how many times you need to run your code.</p>
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">
+              {`while (!gameOver) {
+  renderNewFrame();
+  renderGame();
+}
+`}
+            </code>
+          </pre>
+          <p>In the above example, the while loop will continue to render frames for a game until the variable gameOver equals true.</p>
+          <SubHeading id="dowhile">Do While</SubHeading>
+          <p>
+            Do while is the same as a while loop, the only difference is that a while loop will check its condition first before running its code, whereas a do while loop will run its piece of code at least once, before checking the condition set.
+          </p>
+          <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+            <code className="language-js">
+              {`do {
+  console.log("Hello, world");
+} while (false);
+
+// This will print "Hello, world" to the console, even though the condition is false.`}
+            </code>
+          </pre>
+          <SubHeading id="exercise">Exercise</SubHeading>
+          <p>Write a for loop that prints the numbers 1-10 to the console. If you get stuck, click the button to reveal the answer.</p>
+          <button onClick={() => setShowAnswer(!showAnswer)} className="px-3 py-2 rounded-md text-white font-semibold bg-ekc-b1 hover:bg-ekc-b3 duration-300">
+            See Answer
+          </button>
+          {showAnswer && (
+            <div>
+              <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+                <code className="language-js">
+                  {`for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}`}
+                </code>
+              </pre>
+            </div>
+          )}
+          <div className="flex gap-x-3 justify-between pt-3">
+            <Link href="/lessons/6" className="px-3 py-2 rounded-md text-white font-semibold bg-ekc-b1 hover:bg-ekc-b3 duration-300">
+              Return to lesson 6
+            </Link>
+            <Link href="/lessons/8" className="px-3 py-2 rounded-md text-white font-semibold bg-ekc-b1 hover:bg-ekc-b3 duration-300">
+              Next Lesson
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 function Lesson8() {
-  return <h1>Lesson 8</h1>;
+  const [showAnswer, setShowAnswer] = useState(false);
+
+  useEffect(() => {
+    Prism.highlightAll();
+  }, [showAnswer]);
+  const title = "Lesson 6 - Functions";
+  return (
+    <div className="flex w-full">
+      <div className="bg-gray-300 w-72 hidden lg:block">
+        <div className="flex flex-col gap-3 px-4">
+          <span className="text-sm text-gray-500">Chapter</span>
+          <span className="text-sm">{title}</span>
+          <span className="text-sm text-gray-500">Lesson Navigation</span>
+          <Link href="#if" className="text-sm">
+            Why use functions?
+          </Link>
+          <Link href="#else" className="text-sm">
+            How to make one
+          </Link>
+          <Link href="#logical" className="text-sm">
+            Parameters
+          </Link>
+          <Link href="#exercise" className="text-sm">
+            Calling a function
+          </Link>
+        </div>
+      </div>
+      <div className="bg-ekc-b2 w-full p-6">
+        <div className="lg:w-3/4 mx-auto text-white">
+          <Heading>{title}</Heading>
+
+          <SubHeading id="why">Why do we use functions?</SubHeading>
+
+          <p>
+            Functions are pieces of reusable code that prevent the programmer from repeating themselves. Similar to how a variable can replace a value within a string or a condtion, a function is multiple lines of code. Functions also enable cleaner
+            code, making it easier to maintain.
+          </p>
+          <pre>
+            <code className="language-js">
+              {`function authenticate(username, password) {
+    if (username === "admin" && password === "password") {
+        return "You have successfully logged in!";
+    } else {
+        return "Invalid username or password.";
+    }
+}
+`}
+            </code>
+          </pre>
+          <small>An example of a function</small>
+
+          <SubHeading id="how">How to create a function</SubHeading>
+
+          <p>To create a function, you need to use the &quot;function&quot; keyword, followed by the name of the function. The logic for your function is placed within the curly brackets.</p>
+          <pre>
+            <code className="language-js">
+              {`function myFunction() {
+    console.log("Hello, world!");
+}
+`}
+            </code>
+          </pre>
+          <small>Note the braces after the function name () - these are critical!</small>
+
+          <SubHeading id="param">Parameters</SubHeading>
+
+          <p>Functions are not just for reusing static code that doesn&apos;t change. They can also be used in combination with content that changes, or data that is provided by the user. These dynamic pieces of content are called parameters.</p>
+          <pre>
+            <code className="language-js">
+              {`function greetUser(name) {
+    console.log("Hello, " + name);
+}
+greetUser("John");
+`}
+            </code>
+          </pre>
+          <small>An example of a function with a parameter</small>
+          <p>Notice how the function parameter is written in between the brackets after the function name ();</p>
+          <p>When the function is used, we provide the value we want in between the brackets, and it is substitued into the function argument under the variable name &quot;name&quot;.</p>
+          <SubHeading id="calling">Calling a Function</SubHeading>
+
+          <p>So how do we call a function? Calling a function is simple. Simply take the function name, and add two brackets after it, similar to how we wrote it at the start. If our function was called myFunction, we&apos;d write:</p>
+          <pre>
+            <code className="language-js">{`myFunction()`}</code>
+          </pre>
+          <p>If our function had arguments, we&apos;d write:</p>
+          <pre>
+            <code className="language-js">{`greetUser("John")`}</code>
+          </pre>
+          <SubHeading id="exercise">Exercise</SubHeading>
+          <p>Write a function called &quot;add&quot; that takes two parameters, and returns the sum of the two numbers. If you get stuck, click the button to reveal the answer.</p>
+          <button onClick={() => setShowAnswer(!showAnswer)} className="px-3 py-2 rounded-md text-white font-semibold bg-ekc-b1 hover:bg-ekc-b3 duration-300">
+            See Answer
+          </button>
+          {showAnswer && (
+            <div>
+              <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
+                <code className="language-js">
+                  {`function add(a, b) {
+    return a + b;
+}`}
+                </code>
+              </pre>
+            </div>
+          )}
+          <div className="flex gap-x-3 justify-between pt-3">
+            <Link href="/lessons/7" className="px-3 py-2 rounded-md text-white font-semibold bg-ekc-b1 hover:bg-ekc-b3 duration-300">
+              Return to lesson 7
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
