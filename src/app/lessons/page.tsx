@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactBtn from "../components/contactBtn";
 function Page() {
   return (
     <>
@@ -18,6 +19,9 @@ function Page() {
         <Lesson number={6} name="Conditional Operators" desc="This is the first lesson" />
         <Lesson number={7} name="Loops" desc="This is the first lesson" />
         <Lesson number={8} name="Functions" desc="This is the first lesson" />
+      </div>
+      <div className="text-center py-12">
+        <ContactBtn />
       </div>
     </>
   );
