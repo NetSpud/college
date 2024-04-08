@@ -575,7 +575,7 @@ if (withdrawalAmount > accountBalance) {
 }`}</code>
           </pre>
           <p>
-            otice how the use of the &quot;&&&quot; operator means that the result of both email <strong>and</strong> password must be correct for the code to run.
+            notice how the use of the &quot;&&&quot; operator means that the result of both email <strong>and</strong> password must be correct for the code to run.
           </p>
 
           <SubHeading id="exercise">Exercise</SubHeading>
