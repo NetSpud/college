@@ -533,7 +533,7 @@ function Lesson6() {
           </pre>
 
           <SubHeading id="exercise">Comparisons</SubHeading>
-          <p>Javascript doesn&quot;t just check for basic true/false, it can also compare data in a more sophistocated form, such as greater than, less than, or not equal to.</p>
+          <p>Javascript doesn&apos;t just check for basic true/false, it can also compare data in a more sophistocated form, such as greater than, less than, or not equal to.</p>
           <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
             <code className="language-js">{`> //greater than
 >= //greater than or equal to
