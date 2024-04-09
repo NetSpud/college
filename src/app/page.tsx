@@ -1,54 +1,12 @@
 "use client";
-import Footer from "@/app/components/footer";
-import Navigation from "@/app/components/navigation";
 import Image from "next/image";
 import Hero1 from "../../public/hero-1.jpg";
 import Hero2 from "../../public/hero-2.jpg";
 import Hero3 from "../../public/hero-3.jpg";
-import { MouseEventHandler, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import ContactBtn from "./components/contactBtn";
-function ArrowLeft({ onClick }: { onClick: MouseEventHandler }) {
-  return (
-    <svg
-      onClick={onClick}
-      className="w-8 h-8 cursor-pointer hover:text-ekc-b3 duration-300"
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <line x1="19" y1="12" x2="5" y2="12"></line>
-      <polyline points="12 19 5 12 12 5"></polyline>
-    </svg>
-  );
-}
-
-function ArrowRight({ onClick }: { onClick: MouseEventHandler }) {
-  return (
-    <svg
-      onClick={onClick}
-      className="w-8 h-8 cursor-pointer hover:text-ekc-b3 duration-300"
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <line x1="5" y1="12" x2="19" y2="12"></line>
-      <polyline points="12 5 19 12 12 19"></polyline>
-    </svg>
-  );
-}
+import { ArrowLeft, ArrowRight } from "./components/arrows";
 
 export default function Home() {
   return (
