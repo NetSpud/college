@@ -73,7 +73,8 @@ function Lesson1() {
           <br />
           <SubHeading id="what-is-js">What is Javascript?</SubHeading>
           <p className="text-white mx-auto">
-            JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+            JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions. Javascript has
+            been around since 1995, and was created by Brendan Eich, a Netscape Communications Corporation employee.
           </p>
           <div className="flex justify-center">
             <img src="/lesson-media/example-js.png" />
@@ -83,7 +84,16 @@ function Lesson1() {
           <br />
           <br />
           <SubHeading id="what-makes-unique">What makes Javascript unique?</SubHeading>
-          <p className="text-white mx-auto">JavaScript is a multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.</p>
+          <p className="text-white mx-auto">JavaScript is a multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. It is unique thanks to:</p>
+          <ul className="list-disc mx-auto text-white">
+            <li>Its ability to manipulate the DOM (Document Object Model)</li>
+            <li>Its able to run on the client-side of the web</li>
+            <li>It can be used with other languages (Node.js)</li>
+          </ul>
+
+          <br />
+          <SubHeading id="what-can-do">What can Javascript do?</SubHeading>
+
           <div className="flex justify-center">
             <img src="/lesson-media/example-oop.png" />
           </div>
