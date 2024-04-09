@@ -7,7 +7,7 @@ import Footer from "./components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Canterbury Collge | Introduction to JavaScript",
+  title: "Canterbury College | Introduction to JavaScript",
   description: "Created By Edward Morris, Introduction to JavaScript, Canterbury College, 2024",
   keywords: "JavaScript, Canterbury College, 2024, Coding, Programming, Web Development, Introduction to JavaScript",
   authors: [
