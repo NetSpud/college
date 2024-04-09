@@ -92,7 +92,6 @@ function Lesson1() {
           </ul>
 
           <br />
-          <SubHeading id="what-can-do">What can Javascript do?</SubHeading>
 
           <div className="flex justify-center">
             <img src="/lesson-media/example-oop.png" />
@@ -139,7 +138,7 @@ function Lesson2() {
           <Link href="#script-tags" className="text-sm">
             Script Tags
           </Link>
-          <Link href="#runing-code" className="text-sm">
+          <Link href="#running-code" className="text-sm">
             Running the code
           </Link>
         </div>
@@ -213,7 +212,7 @@ function Lesson3() {
             Naming Variables
           </Link>
           <Link href="#writing-code" className="text-sm">
-            Writing code
+            Exercise
           </Link>
         </div>
       </div>
@@ -260,7 +259,7 @@ function Lesson3() {
             <code className="language-js">{`var myVariable = "Hello"; //Same as let, but the old style of writing, not used much anymore.`}</code>
           </pre>
 
-          <SubHeading id="running-code">Naming Variables</SubHeading>
+          <SubHeading id="var-naming">Naming Variables</SubHeading>
 
           <p>Can we name a variable anything?</p>
           <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
@@ -272,7 +271,7 @@ function Lesson3() {
             are allowed.
           </p>
 
-          <SubSubHeading>Writing code</SubSubHeading>
+          <SubHeading id="writing-code">Exercise</SubHeading>
 
           <p>Create two variables named &apos;first&apos; and &apos;last&apos;, and assign them your name. Try and print these to the console, and see the result. If you get stuck, click the &apos;answer&apos; button.</p>
           <button onClick={() => setAnswer(!answer)} className="px-3 py-2 rounded-md text-white font-semibold bg-ekc-b1 hover:bg-ekc-b3 duration-300 mb-6">
@@ -354,6 +353,7 @@ function Lesson4() {
           <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
             <code className="language-js">{`const yesval = true; //says yes\nconst noval = false; //says no`}</code>
           </pre>
+
           <div className="flex gap-x-3 justify-between pt-3">
             <Link href="/lessons/3" className="px-3 py-2 rounded-md text-white font-semibold bg-ekc-b1 hover:bg-ekc-b3 duration-300">
               Return to lesson 3
@@ -396,6 +396,9 @@ function Lesson5() {
           </Link>
           <Link href="#mod" className="text-sm">
             Modulo
+          </Link>
+          <Link href="#exercise" className="text-sm">
+            Exercise
           </Link>
         </div>
       </div>
@@ -453,7 +456,7 @@ const result = a % b;
 console.log(c); // 1`}</code>
           </pre>
 
-          <SubSubHeading>Exercise</SubSubHeading>
+          <SubHeading id="exercise">Exercise</SubHeading>
           <p>Write a piece of code that calculates the sum of 100 and 50, and logs the result to the console. If you get stuck, click the button to reveal the answer.</p>
 
           <button onClick={() => setShowAnswer(!showAnswer)} className="px-3 py-2 rounded-md text-white font-semibold bg-ekc-b1 hover:bg-ekc-b3 duration-300">
@@ -505,6 +508,9 @@ function Lesson6() {
           <Link href="#else" className="text-sm">
             Else
           </Link>
+          <Link href="#comparisons" className="text-sm">
+            Comparisons
+          </Link>
           <Link href="#logical" className="text-sm">
             Logical Operators
           </Link>
@@ -542,7 +548,7 @@ function Lesson6() {
 }`}</code>
           </pre>
 
-          <SubHeading id="exercise">Comparisons</SubHeading>
+          <SubHeading id="comparisons">Comparisons</SubHeading>
           <p>Javascript doesn&apos;t just check for basic true/false, it can also compare data in a more sophistocated form, such as greater than, less than, or not equal to.</p>
           <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
             <code className="language-js">{`> //greater than
@@ -590,9 +596,10 @@ if (withdrawalAmount > accountBalance) {
 
           <SubHeading id="exercise">Exercise</SubHeading>
           <p className="mb-3">
-            A more tricky one this time! Please declare two constant variables, named email and password. These variables should be string values, and should have the values &quot;example@example.com&quot;, and &quot;password&quot;
+            A more tricky one this time! Please declare two constant variables, named email and password. These variables should be string values, and should have the values &quot;example@example.com&quot;, and &quot;password&quot;.
             <br />
-            Next, write an if statement that logs if the value of email equals &quot;example@example.com&quot; and the value of password equals &quot;password&quot;. If you get stuck, click the button to reveal the answer.
+            Next, write an if statement that logs &quot;Login successful&quot; if the value of email equals &quot;example@example.com&quot; and the value of password equals &quot;password&quot;. If it doesn&apos;t, log &quot;Login failed&quot;
+            instead. <br /> If you get stuck, click the button to reveal the answer.
           </p>
 
           <button onClick={() => setShowAnswer(!showAnswer)} className="px-3 py-2 rounded-md text-white font-semibold bg-ekc-b1 hover:bg-ekc-b3 duration-300">
@@ -635,7 +642,7 @@ function Lesson7() {
   useEffect(() => {
     Prism.highlightAll();
   }, [showAnswer]);
-  const title = "Lesson 6 - Loops";
+  const title = "Lesson 7 - Loops";
   return (
     <div className="flex w-full">
       <div className="bg-gray-300 w-72 hidden lg:block">
@@ -643,14 +650,14 @@ function Lesson7() {
           <span className="text-sm text-gray-500">Chapter</span>
           <span className="text-sm">{title}</span>
           <span className="text-sm text-gray-500">Lesson Navigation</span>
-          <Link href="#if" className="text-sm">
-            The &quot;if&quot; statement
+          <Link href="#for" className="text-sm">
+            For Loop
           </Link>
-          <Link href="#else" className="text-sm">
-            Else
+          <Link href="#while" className="text-sm">
+            While Loop
           </Link>
-          <Link href="#logical" className="text-sm">
-            Logical Operators
+          <Link href="#dowhile" className="text-sm">
+            Do While
           </Link>
           <Link href="#exercise" className="text-sm">
             Exercise
@@ -753,17 +760,20 @@ function Lesson8() {
           <span className="text-sm text-gray-500">Chapter</span>
           <span className="text-sm">{title}</span>
           <span className="text-sm text-gray-500">Lesson Navigation</span>
-          <Link href="#if" className="text-sm">
+          <Link href="#why" className="text-sm">
             Why use functions?
           </Link>
-          <Link href="#else" className="text-sm">
+          <Link href="#how" className="text-sm">
             How to make one
           </Link>
-          <Link href="#logical" className="text-sm">
+          <Link href="#parameters" className="text-sm">
             Parameters
           </Link>
-          <Link href="#exercise" className="text-sm">
+          <Link href="#calling" className="text-sm">
             Calling a function
+          </Link>
+          <Link href="#exercise" className="text-sm">
+            Exercise
           </Link>
         </div>
       </div>
@@ -804,7 +814,7 @@ function Lesson8() {
           </pre>
           <small>Note the braces after the function name () - these are critical!</small>
 
-          <SubHeading id="param">Parameters</SubHeading>
+          <SubHeading id="parameters">Parameters</SubHeading>
 
           <p>Functions are not just for reusing static code that doesn&apos;t change. They can also be used in combination with content that changes, or data that is provided by the user. These dynamic pieces of content are called parameters.</p>
           <pre>
