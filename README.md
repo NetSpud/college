@@ -16,7 +16,13 @@ If you want to run the webpage, you'll need NodeJS installed. If you'd rather no
 
 ## Getting Started
 
-First, run the development server:
+First, install packages:
+
+```bash
+npm install
+```
+
+Then, run the development server
 
 ```bash
 npm run dev
