@@ -1,4 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Canterbury college programming website
+
+Lesson content can be found in `/src/app/lessons[slug]/page.tsx`
+
+The `[slug]` wildcard allows lesson numbers 1-8 (i.e. "/lessons/1")
+
+The content for each lesson can be found under their respective function, within that file.
+
+For example, lesson 1 content can be found under the `Lesson1` function in `/src/app/lessons[slug]/page.tsx`
+
+This application also makes use of `next/link`, which is a Next.js component that allows for client-side navigation between pages. It's effectively the same as an `<a>` tag, but it doesn't reload the page when navigating to a different page on the same site.
+
+# DEVELOPMENT
+
+If you want to run the webpage, you'll need NodeJS installed. If you'd rather not, please use the URL provided instead.
 
 ## Getting Started
 
