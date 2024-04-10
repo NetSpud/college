@@ -3,6 +3,7 @@ import { MouseEventHandler } from "react";
 function ArrowLeft({ onClick }: { onClick: MouseEventHandler }) {
   return (
     <svg
+      tabIndex={0}
       onClick={onClick}
       className="w-8 h-8 cursor-pointer hover:text-ekc-b3 duration-300"
       xmlns="http://www.w3.org/2000/svg"
@@ -24,6 +25,7 @@ function ArrowLeft({ onClick }: { onClick: MouseEventHandler }) {
 function ArrowRight({ onClick }: { onClick: MouseEventHandler }) {
   return (
     <svg
+      tabIndex={0}
       onClick={onClick}
       className="w-8 h-8 cursor-pointer hover:text-ekc-b3 duration-300"
       xmlns="http://www.w3.org/2000/svg"

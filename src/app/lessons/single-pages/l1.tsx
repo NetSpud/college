@@ -11,7 +11,7 @@ function Lesson1() {
   return (
     <div className="flex w-full">
       <div className="bg-gray-300 w-72 hidden lg:block">
-        <div className="flex flex-col gap-3 px-4">
+        <div className="flex flex-col gap-3 px-4 sticky-custom">
           <span className="text-sm text-gray-500">Chapter</span>
           <span className="text-sm">Lesson 1 - History Of Javascript</span>
           <span className="text-sm text-gray-500">Lesson Navigation</span>

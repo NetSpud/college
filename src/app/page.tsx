@@ -12,8 +12,10 @@ export default function Home() {
   return (
     <>
       <HeroSlider />
-      <Lessons />
-      <Usage />
+      <div role="main">
+        <Lessons />
+        <Usage />
+      </div>
       <h2 className="text-3xl text-bold bg-ekc-b4 text-white font-bold text-center p-3">WANT TO LEARN MORE?</h2>
       <div className="my-12 flex justify-center">
         <ContactBtn />

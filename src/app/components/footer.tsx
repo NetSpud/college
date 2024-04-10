@@ -8,11 +8,15 @@ function Footer() {
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div className="flex flex-col items-center lg:items-start">
-              <span className="text-2xl font-bold">Contact Us</span>
+              <span role="heading" aria-level={4} className="text-2xl font-bold">
+                Contact Us
+              </span>
               <p className="text-lg">01227 811111</p>
             </div>
             <div className="flex flex-col items-center lg:items-start">
-              <span className="text-2xl font-bold">Address</span>
+              <span role="heading" aria-level={4} className="text-2xl font-bold">
+                Address
+              </span>
               <p className="text-lg">New Dover Rd, Canterbury, CT1 3AJ</p>
             </div>
           </div>
