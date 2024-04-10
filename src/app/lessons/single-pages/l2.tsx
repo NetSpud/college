@@ -7,7 +7,6 @@ import Prism from "prismjs";
 function Lesson2() {
   useEffect(() => {
     Prism.highlightAll();
-    document.title = "Canterbury College | Lesson 2";
   }, []);
 
   return (

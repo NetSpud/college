@@ -9,7 +9,6 @@ function Lesson6() {
 
   useEffect(() => {
     Prism.highlightAll();
-    document.title = "Canterbury College | Lesson 6";
   }, [showAnswer]);
   const title = "Lesson 6 - Conditional Operators";
   return (

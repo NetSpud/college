@@ -9,7 +9,6 @@ function Lesson7() {
 
   useEffect(() => {
     Prism.highlightAll();
-    document.title = "Canterbury College | Lesson 7";
   }, [showAnswer]);
 
   const title = "Lesson 7 - Loops";

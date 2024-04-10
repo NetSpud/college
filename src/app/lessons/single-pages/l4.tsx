@@ -7,7 +7,6 @@ import Prism from "prismjs";
 function Lesson4() {
   useEffect(() => {
     Prism.highlightAll();
-    document.title = "Canterbury College | Lesson 4";
   }, []);
   const title = "Lesson 4 - Data Types";
   return (

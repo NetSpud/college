@@ -8,7 +8,6 @@ function Lesson3() {
   const [answer, setAnswer] = useState(false);
   useEffect(() => {
     Prism.highlightAll();
-    document.title = "Canterbury College | Lesson 3";
   }, [answer]);
 
   return (

@@ -9,7 +9,6 @@ function Lesson5() {
 
   useEffect(() => {
     Prism.highlightAll();
-    document.title = "Canterbury College | Lesson 5";
   }, [showAnswer]);
   const title = "Lesson 5 - Mathmatical Operators";
   return (

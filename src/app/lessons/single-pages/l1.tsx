@@ -2,13 +2,8 @@
 
 import Link from "next/link";
 import { Heading, SubHeading, SubSubHeading } from "../../components/headings";
-import { useEffect } from "react";
 
 function Lesson1() {
-  useEffect(() => {
-    document.title = "Canterbury College | Lesson 1";
-    console.log(`page title is now: ${document.title}`);
-  });
   return (
     <div className="flex w-full">
       <div className="bg-gray-300 w-72 hidden lg:block">
