@@ -51,7 +51,7 @@ function Lesson2() {
             <code className="language-html">{`CMD + SHIFT + J`}</code>
           </pre>
           <div className="py-12">
-            <img src="/lesson-media/console.png" />
+            <img src="/lesson-media/console.png" alt="Screenshot of the console output" />
             <small className="text-xs text-gray-300">Example of console output</small>
           </div>
           <p>Congratulations! You&apos;ve just written your first piece of Javascript!</p>
