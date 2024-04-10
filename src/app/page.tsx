@@ -72,11 +72,11 @@ function HeroSlider() {
           <ArrowRight onClick={() => nextImage()} />
         </div>
       </div>
-      <span className="absolute bottom-2 flex gap-x-3">
+      <div className="absolute bottom-2 flex gap-x-3">
         {images.map((image, index) => (
           <div key={index} onClick={() => setCurrentImage(image)} className={`p-3 bg-green-300 rounded-full cursor-pointer ${image === currentImage ? "bg-green-500" : ""}`}></div>
         ))}
-      </span>
+      </div>
     </div>
   );
 }
