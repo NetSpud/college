@@ -23,11 +23,11 @@ const DesktopNav = () => {
     <div className="flex-wrap hidden justify-evenly items-center sm:flex py-4">
       <Logo />
 
-      <ul className="ml-8 flex items-center lg:gap-24 gap-6">
+      <div className="ml-8 flex items-center lg:gap-24 gap-6">
         {urls.map((url) => (
           <NavItem key={url.display} display={url.display} slug={url.url} />
         ))}
-      </ul>
+      </div>
       <SearchBox />
     </div>
   );
