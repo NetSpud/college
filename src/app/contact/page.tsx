@@ -3,14 +3,13 @@ import { useState } from "react";
 function App() {
   return (
     <div>
-      <h1 className="text-3xl text-center py-3 bg-gray-100">Contact Us</h1>
+      <h1 className="text-4xl text-bold bg-ekc-b4 text-white font-bold text-center p-3 uppercase">Contact</h1>
       <div className="text-center text-xl mb-12">
         <p>Have a question?</p>
         <p>or need to get in touch?</p>
         <p>Send us a message!</p>
         <p>We will get back to you as soon as possible!</p>
       </div>
-
       <div className="mx-auto lg:w-1/2 px-3 mb-3">
         <Form />
       </div>
