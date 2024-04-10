@@ -27,7 +27,7 @@ function Footer() {
 }
 function SocialIcon({ children, href = "" }: { children: ReactNode; href?: string }) {
   return (
-    <Link href={href} target="_blank" className="bg-gray-900 fill-white rounded-lg p-3 cursor-pointer hover:bg-gray-600 duration-300">
+    <Link role="link" href={href} target="_blank" className="bg-gray-900 fill-white rounded-lg p-3 cursor-pointer hover:bg-gray-600 duration-300">
       {children}
     </Link>
   );
