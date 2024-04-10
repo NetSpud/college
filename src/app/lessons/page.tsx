@@ -1,6 +1,11 @@
+"use client";
 import Link from "next/link";
 import ContactBtn from "../components/contactBtn";
+import { useEffect } from "react";
 function Page() {
+  useEffect(() => {
+    document.title = "Lessons | Canterbury College";
+  }, []);
   return (
     <>
       <Hero />
