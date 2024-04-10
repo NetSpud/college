@@ -63,7 +63,9 @@ function HeroSlider() {
           <div>
             <h1 className="lg:text-3xl text-sm sm:text-lg text-white font-light">GETTING STARTED WITH JAVASCRIPT</h1>
             <div className="flex gap-16 pt-3 justify-center">
-              <a className="px-3 py-2 rounded-md bg-ekc-b3 hover:bg-ekc-b4 duration-300 cursor-pointer uppercase font-semibold text-lg">Start</a>
+              <Link href="/lessons" className="px-3 py-2 rounded-md bg-ekc-b3 hover:bg-ekc-b4 duration-300 cursor-pointer uppercase font-semibold text-lg">
+                Start
+              </Link>
               <Link href="/lessons" className="px-3 py-2 rounded-md bg-ekc-b3 hover:bg-ekc-b4 duration-300 cursor-pointer uppercase font-semibold text-lg">
                 Lessons
               </Link>

@@ -25,9 +25,9 @@ function Footer() {
     </div>
   );
 }
-function SocialIcon({ children, href = "" }: { children: ReactNode; href?: string }) {
+function SocialIcon({ children, href = "", type }: { children: ReactNode; href?: string; type: string }) {
   return (
-    <Link role="link" href={href} target="_blank" className="bg-gray-900 fill-white rounded-lg p-3 cursor-pointer hover:bg-gray-600 duration-300">
+    <Link aria-label={type} role="link" href={href} target="_blank" className="bg-gray-900 fill-white rounded-lg p-3 cursor-pointer hover:bg-gray-600 duration-300">
       {children}
     </Link>
   );
@@ -44,22 +44,22 @@ function Copyright() {
 function Socials() {
   return (
     <div id="socials" className="flex gap-3 lg:justify-end justify-center">
-      <SocialIcon href="https://www.instagram.com/ekc_canterburycollege">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <SocialIcon type="Instagram" href="https://www.instagram.com/ekc_canterburycollege">
+        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
           <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
           <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
         </svg>
       </SocialIcon>
-      <SocialIcon href="https://www.linkedin.com/company/ekc-canterburycollege">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <SocialIcon type="LinkedIn" href="https://www.linkedin.com/company/ekc-canterburycollege">
+        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
           <rect x="2" y="9" width="4" height="12" />
           <circle cx="4" cy="4" r="2" />
         </svg>
       </SocialIcon>
-      <SocialIcon href="https://www.facebook.com/ekccanterburycollege">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <SocialIcon type="Facebook" href="https://www.facebook.com/ekccanterburycollege">
+        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
         </svg>
       </SocialIcon>
