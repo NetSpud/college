@@ -40,7 +40,7 @@ function Lesson1() {
           <div className="flex justify-center">
             <img src="/lesson-media/example-js.png" alt="Example piece of javascript" />
           </div>
-          <small className="text-xs text-center text-gray-100">Example of javascript code</small>
+          <small className="text-xs text-center text-gray-100 mx-auto block">Example of javascript code</small>
           <br />
           <br />
           <br />
@@ -57,7 +57,7 @@ function Lesson1() {
           <div className="flex justify-center">
             <img src="/lesson-media/example-oop.png" alt="Example of object-orientated Javascript" />
           </div>
-          <small className="text-xs text-center text-gray-100">Example of javascript Object-Orientated</small>
+          <small className="text-xs text-center text-gray-100 mx-auto block">Example of javascript Object-Orientated</small>
 
           <br />
           <br />
