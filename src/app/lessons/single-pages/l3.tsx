@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Heading, SubHeading, SubSubHeading } from "../[slug]/page";
+import { Heading, SubHeading, SubSubHeading } from "../../components/headings";
 import { useEffect, useState } from "react";
 import Prism from "prismjs";
 

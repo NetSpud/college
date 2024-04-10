@@ -36,19 +36,3 @@ export default function Page({ params }: { params: { slug: number } }) {
     return notFound();
   }
 }
-
-export function SubHeading({ children, id }: { children: string; id: string }) {
-  return (
-    <h2 id={id} className="text-2xl text-center font-semibold text-white">
-      {children}
-    </h2>
-  );
-}
-
-export function SubSubHeading({ children }: { children: string }) {
-  return <h3 className="text-xl text-center font-semibold text-white">{children}</h3>;
-}
-
-export function Heading({ children }: { children: string }) {
-  return <h1 className="text-3xl text-center font-semibold text-white">{children}</h1>;
-}

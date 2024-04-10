@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Prism from "prismjs";
 import { useState, useEffect } from "react";
-import { Heading, SubHeading } from "../[slug]/page";
+import { Heading, SubHeading } from "../../components/headings";
 
 function Lesson7() {
   const [showAnswer, setShowAnswer] = useState(false);

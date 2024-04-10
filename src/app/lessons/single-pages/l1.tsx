@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Heading, SubHeading } from "../[slug]/page";
+import { Heading, SubHeading, SubSubHeading } from "../../components/headings";
 import { useEffect } from "react";
 
 function Lesson1() {
