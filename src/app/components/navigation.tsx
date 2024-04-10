@@ -45,12 +45,12 @@ const MobileNav = () => {
           </svg>
         </button>
       </div>
-      <ul className={`ml-8 flex-col items-center gap-5 ${isOpen ? "flex" : "hidden"}`}>
+      <div className={`ml-8 flex-col items-center gap-5 ${isOpen ? "flex" : "hidden"}`}>
         {urls.map((url) => (
           <NavItem key={url.display} display={url.display} slug={url.url} />
         ))}
         <SearchBox />
-      </ul>
+      </div>
     </div>
   );
 };
