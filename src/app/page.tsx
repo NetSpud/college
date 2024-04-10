@@ -76,7 +76,7 @@ function HeroSlider() {
       </div>
       <div className="absolute bottom-2 flex gap-x-3">
         {images.map((image, index) => (
-          <div key={index} onClick={() => setCurrentImage(image)} className={`p-3 bg-green-300 rounded-full cursor-pointer ${image === currentImage ? "bg-green-500" : ""}`}></div>
+          <div aria-label={`Image slide ${index}`} tabIndex={0} role="button" key={index} onClick={() => setCurrentImage(image)} className={`p-3 bg-green-300 rounded-full cursor-pointer ${image === currentImage ? "bg-green-500" : ""}`}></div>
         ))}
       </div>
     </div>

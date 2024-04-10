@@ -8,11 +8,11 @@ function Footer() {
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div className="flex flex-col items-center lg:items-start">
-              <h1 className="text-2xl font-bold">Contact Us</h1>
+              <span className="text-2xl font-bold">Contact Us</span>
               <p className="text-lg">01227 811111</p>
             </div>
             <div className="flex flex-col items-center lg:items-start">
-              <h1 className="text-2xl font-bold">Address</h1>
+              <span className="text-2xl font-bold">Address</span>
               <p className="text-lg">New Dover Rd, Canterbury, CT1 3AJ</p>
             </div>
           </div>
@@ -27,7 +27,7 @@ function Footer() {
 }
 function SocialIcon({ children, href = "", type }: { children: ReactNode; href?: string; type: string }) {
   return (
-    <Link aria-label={type} role="link" href={href} target="_blank" className="bg-gray-900 fill-white rounded-lg p-3 cursor-pointer hover:bg-gray-600 duration-300">
+    <Link aria-label={type} role="link" href={href} className="bg-gray-900 fill-white rounded-lg p-3 cursor-pointer hover:bg-gray-600 duration-300">
       {children}
     </Link>
   );
