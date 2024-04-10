@@ -21,16 +21,16 @@ function Lesson7() {
           <span className="text-sm text-gray-500">Chapter</span>
           <span className="text-sm">{title}</span>
           <span className="text-sm text-gray-500">Lesson Navigation</span>
-          <Link href="#for" className="text-sm">
+          <Link href="#for" className="text-sm hover:text-ekc-b4 duration-100">
             For Loop
           </Link>
-          <Link href="#while" className="text-sm">
+          <Link href="#while" className="text-sm hover:text-ekc-b4 duration-100">
             While Loop
           </Link>
-          <Link href="#dowhile" className="text-sm">
+          <Link href="#dowhile" className="text-sm hover:text-ekc-b4 duration-100">
             Do While
           </Link>
-          <Link href="#exercise" className="text-sm">
+          <Link href="#exercise" className="text-sm hover:text-ekc-b4 duration-100">
             Exercise
           </Link>
         </div>

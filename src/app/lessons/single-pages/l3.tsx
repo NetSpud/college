@@ -18,16 +18,16 @@ function Lesson3() {
           <span className="text-sm text-gray-500">Chapter</span>
           <span className="text-sm">Lesson 3 - Variables</span>
           <span className="text-sm text-gray-500">Lesson Navigation</span>
-          <Link href="#what-are" className="text-sm">
+          <Link href="#what-are" className="text-sm hover:text-ekc-b4 duration-100">
             What are variables?
           </Link>
-          <Link href="#diff" className="text-sm">
+          <Link href="#diff" className="text-sm hover:text-ekc-b4 duration-100">
             Difference between var, let and const
           </Link>
-          <Link href="#var-naming" className="text-sm">
+          <Link href="#var-naming" className="text-sm hover:text-ekc-b4 duration-100">
             Naming Variables
           </Link>
-          <Link href="#writing-code" className="text-sm">
+          <Link href="#writing-code" className="text-sm hover:text-ekc-b4 duration-100">
             Exercise
           </Link>
         </div>
@@ -47,14 +47,14 @@ function Lesson3() {
           <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
             <code className="language-js">
               {
-                "const data = `Jack, a software engineer, was working on a project.\nJack's task was to debug a piece of code. Jack found the bug, fixed it,\nand then Jack tested it. Jack was satisfied with the results.\nJack then documented his work. Jack's manager was impressed with Jack's efficiency.\nJack felt proud of his work.`;"
+                "const data = `Jack, a software engineer, was working on a project.\nJack's task was to debug a piece of code. Jack found the bug, fixed it,\nand then Jack tested it. Jack was satisfied with the results.\nJack then documented his work.Jack's manager was impressed with Jack's efficiency.\nJack felt proud of his work.`;"
               }
             </code>
           </pre>
           <SubSubHeading>With Variables</SubSubHeading>
           <pre className="p-4 bg-gray-800 text-white rounded-md overflow-auto">
             <code className="language-js">
-              {`const characterName = "Jack";\nconst data = \`\${characterName}, a software engineer, was working on a project.\n\${characterName}'s task was to debug a piece of code. Jack found the bug, fixed it,\nand then \${characterName} tested it. \${characterName} was satisfied with the results.\n\${characterName} then documented his work. \${characterName}'s manager was impressed with \${characterName}'s efficiency.\n\${characterName} felt proud of his work.\`;`}
+              {`const characterName = "Jack";\nconst data = \`\${characterName}, a software engineer, was working on a project.\n\${characterName}'s task was to debug a piece of code. Jack found the bug, fixed it,\nand then \${characterName} tested it.\n\${characterName} was satisfied with the results.\n\${characterName} then documented his work.\n\${characterName}'s manager was impressed with \${characterName}'s efficiency.\n\${characterName} felt proud of his work.\`;`}
             </code>
           </pre>
           <p className="mb-12">Notice how we only need to change the code in one place, to update it everywhere else in the code..</p>

@@ -15,13 +15,13 @@ function Lesson1() {
           <span className="text-sm text-gray-500">Chapter</span>
           <span className="text-sm">Lesson 1 - History Of Javascript</span>
           <span className="text-sm text-gray-500">Lesson Navigation</span>
-          <Link href="#what-is-js" className="text-sm">
+          <Link href="#what-is-js" className="text-sm hover:text-ekc-b4 duration-100">
             What is Javascript?
           </Link>
-          <Link href="#what-makes-unique" className="text-sm">
+          <Link href="#what-makes-unique" className="text-sm hover:text-ekc-b4 duration-100">
             What makes Javascript unique?
           </Link>
-          <Link href="#what-can-do" className="text-sm">
+          <Link href="#what-can-do" className="text-sm hover:text-ekc-b4 duration-100">
             What can Javascript do?
           </Link>
         </div>

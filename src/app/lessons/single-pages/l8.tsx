@@ -19,19 +19,19 @@ function Lesson8() {
           <span className="text-sm text-gray-500">Chapter</span>
           <span className="text-sm">{title}</span>
           <span className="text-sm text-gray-500">Lesson Navigation</span>
-          <Link href="#why" className="text-sm">
+          <Link href="#why" className="text-sm hover:text-ekc-b4 duration-100">
             Why use functions?
           </Link>
-          <Link href="#how" className="text-sm">
+          <Link href="#how" className="text-sm hover:text-ekc-b4 duration-100">
             How to make one
           </Link>
-          <Link href="#parameters" className="text-sm">
+          <Link href="#parameters" className="text-sm hover:text-ekc-b4 duration-100">
             Parameters
           </Link>
-          <Link href="#calling" className="text-sm">
+          <Link href="#calling" className="text-sm hover:text-ekc-b4 duration-100">
             Calling a function
           </Link>
-          <Link href="#exercise" className="text-sm">
+          <Link href="#exercise" className="text-sm hover:text-ekc-b4 duration-100">
             Exercise
           </Link>
         </div>

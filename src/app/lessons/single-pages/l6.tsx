@@ -19,19 +19,19 @@ function Lesson6() {
           <span className="text-sm text-gray-500">Chapter</span>
           <span className="text-sm">{title}</span>
           <span className="text-sm text-gray-500">Lesson Navigation</span>
-          <Link href="#if" className="text-sm">
+          <Link href="#if" className="text-sm hover:text-ekc-b4 duration-100">
             The &quot;if&quot; statement
           </Link>
-          <Link href="#else" className="text-sm">
+          <Link href="#else" className="text-sm hover:text-ekc-b4 duration-100">
             Else
           </Link>
-          <Link href="#comparisons" className="text-sm">
+          <Link href="#comparisons" className="text-sm hover:text-ekc-b4 duration-100">
             Comparisons
           </Link>
-          <Link href="#logical" className="text-sm">
+          <Link href="#logical" className="text-sm hover:text-ekc-b4 duration-100">
             Logical Operators
           </Link>
-          <Link href="#exercise" className="text-sm">
+          <Link href="#exercise" className="text-sm hover:text-ekc-b4 duration-100">
             Exercise
           </Link>
         </div>

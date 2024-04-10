@@ -19,22 +19,22 @@ function Lesson5() {
           <span className="text-sm text-gray-500">Chapter</span>
           <span className="text-sm">{title}</span>
           <span className="text-sm text-gray-500">Lesson Navigation</span>
-          <Link href="#add" className="text-sm">
+          <Link href="#add" className="text-sm hover:text-ekc-b4 duration-100">
             Addition
           </Link>
-          <Link href="#sub" className="text-sm">
+          <Link href="#sub" className="text-sm hover:text-ekc-b4 duration-100">
             Subtraction
           </Link>
-          <Link href="#div" className="text-sm">
+          <Link href="#div" className="text-sm hover:text-ekc-b4 duration-100">
             Division
           </Link>
-          <Link href="#mult" className="text-sm">
+          <Link href="#mult" className="text-sm hover:text-ekc-b4 duration-100">
             Multiplication
           </Link>
-          <Link href="#mod" className="text-sm">
+          <Link href="#mod" className="text-sm hover:text-ekc-b4 duration-100">
             Modulo
           </Link>
-          <Link href="#exercise" className="text-sm">
+          <Link href="#exercise" className="text-sm hover:text-ekc-b4 duration-100">
             Exercise
           </Link>
         </div>

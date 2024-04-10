@@ -17,10 +17,10 @@ function Lesson2() {
           <span className="text-sm text-gray-500">Chapter</span>
           <span className="text-sm">Lesson 2 - Hello, world!</span>
           <span className="text-sm text-gray-500">Lesson Navigation</span>
-          <Link href="#script-tags" className="text-sm">
+          <Link href="#script-tags" className="text-sm hover:text-ekc-b4 duration-100">
             Script Tags
           </Link>
-          <Link href="#running-code" className="text-sm">
+          <Link href="#running-code" className="text-sm hover:text-ekc-b4 duration-100">
             Running the code
           </Link>
         </div>

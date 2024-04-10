@@ -17,13 +17,13 @@ function Lesson4() {
           <span className="text-sm text-gray-500">Chapter</span>
           <span className="text-sm">{title}</span>
           <span className="text-sm text-gray-500">Lesson Navigation</span>
-          <Link href="#strings" className="text-sm">
+          <Link href="#strings" className="text-sm hover:text-ekc-b4 duration-100">
             String
           </Link>
-          <Link href="#numbers-floats" className="text-sm">
+          <Link href="#numbers-floats" className="text-sm hover:text-ekc-b4 duration-100">
             Numbers/Floats
           </Link>
-          <Link href="#boolean" className="text-sm">
+          <Link href="#boolean" className="text-sm hover:text-ekc-b4 duration-100">
             Boolean
           </Link>
         </div>
