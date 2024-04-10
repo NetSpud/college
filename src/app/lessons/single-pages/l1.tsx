@@ -38,7 +38,7 @@ function Lesson1() {
             been around since 1995, and was created by Brendan Eich, a Netscape Communications Corporation employee.
           </p>
           <div className="flex justify-center">
-            <img src="/lesson-media/example-js.png" />
+            <img src="/lesson-media/example-js.png" alt="Example piece of javascript" />
           </div>
           <small className="text-xs text-center text-gray-100">Example of javascript code</small>
           <br />
@@ -55,7 +55,7 @@ function Lesson1() {
           <br />
 
           <div className="flex justify-center">
-            <img src="/lesson-media/example-oop.png" />
+            <img src="/lesson-media/example-oop.png" alt="Example of object-orientated Javascript" />
           </div>
           <small className="text-xs text-center text-gray-100">Example of javascript Object-Orientated</small>
 

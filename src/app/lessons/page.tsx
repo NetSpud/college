@@ -33,11 +33,7 @@ function Page() {
 }
 
 function Hero() {
-  return (
-    <div className="flex justify-center bg-gray-200 py-3">
-      <h1 className="text-4xl font-semibold">LESSONS</h1>
-    </div>
-  );
+  return <h1 className="text-4xl text-bold bg-ekc-b4 text-white font-bold text-center p-3 uppercase">Lessons</h1>;
 }
 
 function Lesson({ number, name, desc }: { number: number; name: string; desc: string }) {
