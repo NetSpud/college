@@ -7,6 +7,7 @@ import { useEffect } from "react";
 function Lesson1() {
   useEffect(() => {
     document.title = "Canterbury College | Lesson 1";
+    console.log(`page title is now: ${document.title}`);
   });
   return (
     <div className="flex w-full">
