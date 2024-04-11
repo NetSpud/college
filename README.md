@@ -1,5 +1,14 @@
 # Canterbury college programming website
 
+
+
+
+- Home page content is under `src/app/page.tsx`
+- About content is under `src/app/about`
+- Contact page content is under `src/app/contact`
+- Components folder holds commonly used components throughout the website (`/src/app/components`)
+
+
 Lesson content can be found in `/src/app/lessons[slug]/page.tsx`
 
 The `[slug]` wildcard allows lesson numbers 1-8 (i.e. "/lessons/1")
@@ -9,6 +18,7 @@ The content for each lesson can be found under their respective function, within
 For example, lesson 1 content can be found under the `Lesson1` function in `/src/app/lessons/single-pages/l1.tsx`
 
 This application also makes use of `next/link`, which is a Next.js component that allows for client-side navigation between pages. It's effectively the same as an `<a>` tag, but it doesn't reload the page when navigating to a different page on the same site.
+
 
 # DEVELOPMENT
 
