@@ -1,6 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 function App() {
+  useEffect(() => {
+    document.title = "Canterbury College | Contact";
+  }, []);
+
   return (
     <div>
       <h1 className="text-4xl text-bold bg-ekc-b4 text-white font-bold text-center p-3 uppercase">Contact</h1>
