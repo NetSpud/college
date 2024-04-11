@@ -4,7 +4,7 @@ Lesson content can be found in `/src/app/lessons[slug]/page.tsx`
 
 The `[slug]` wildcard allows lesson numbers 1-8 (i.e. "/lessons/1")
 
-The content for each lesson can be found under their respective function, within that file.
+The content for each lesson can be found under their respective function, within the `/single-pages` folder
 
 For example, lesson 1 content can be found under the `Lesson1` function in `/src/app/lessons[slug]/page.tsx`
 
