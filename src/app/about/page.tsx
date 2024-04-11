@@ -1,7 +1,12 @@
 import Link from "next/link";
 import ContactBtn from "../components/contactBtn";
 
+import { useEffect } from "react";
+
 export default function Page() {
+  useEffect(() => {
+    document.title = "Canterbury College | About";
+  }, []);
   return (
     <div>
       <h1 className="text-4xl text-bold bg-ekc-b4 text-white font-bold text-center p-3 uppercase">About</h1>
