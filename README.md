@@ -12,8 +12,7 @@ This application also makes use of `next/link`, which is a Next.js component tha
 
 # DEVELOPMENT
 
-WEB URL: webassignment-nine.vercel.app
-
+WEB URL: [webassignment-nine.vercel.app](webassignment-nine.vercel.app)
 If you want to run the webpage, you'll need NodeJS installed. If you'd rather not, please use the URL provided instead.
 
 ## Getting Started
